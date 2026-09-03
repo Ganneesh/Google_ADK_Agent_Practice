@@ -1,0 +1,21 @@
+{
+  "eval_set_id": "requirement_to_feature_basic",
+  "name": "Requirement to Gherkin - Basic Login",
+  "description": "Evaluate whether the agent correctly converts a login requirement into Gherkin.",
+  "eval_cases": [
+    {
+      "eval_id": "login_valid_credentials",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [
+              {
+                "text": "Create a BDD feature file for this requirement: A registered user should be able to log in using valid username and password and should be redirected to the dashboard."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -9,12 +9,12 @@ def save_feature_file(feature_name: str, feature_content: str) -> str:
     os.makedirs(features_folder, exist_ok=True)
 
     if not feature_name.endswith(".feature"):
-    feature_name = f"{feature_name}.feature"
+        feature_name = f"{feature_name}.feature"
 
-file_path = os.path.join(
-    features_folder,
-    feature_name
-)
+    file_path = os.path.join(
+        features_folder,
+        feature_name
+    )
 
     with open(file_path, "w", encoding="utf-8") as file:
         file.write(feature_content)

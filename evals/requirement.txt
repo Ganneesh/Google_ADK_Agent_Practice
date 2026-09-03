@@ -1,0 +1,1 @@
+A registered user should be able to log in using valid username and password and should be redirected to the dashboard.
