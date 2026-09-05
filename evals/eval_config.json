@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "gherkin_structure_check": 1.0,
+    "tool_call_sequence_check": 1.0
+  },
+  "custom_metrics": {
+    "gherkin_structure_check": {
+      "code_config": {
+        "name": "qa_agent.eval_metrics.gherkin_structure_metric"
+      }
+    },
+    "tool_call_sequence_check": {
+      "code_config": {
+        "name": "qa_agent.eval_metrics.tool_call_sequence_metric"
+      }
+    }
+  }
+}

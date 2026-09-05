@@ -1,4 +1,5 @@
 from google.adk.agents.llm_agent import Agent
+from google.genai import types
 import os
 
 
@@ -23,7 +24,7 @@ def save_feature_file(feature_name: str, feature_content: str) -> str:
 
 
 root_agent = Agent(
-    model='gemini-3.5-flash',
+    model='gemini-3.6-flash',
     name='requirement_to_feature_agent',
     description='An agent that understands software requirements and generates BDD feature files.',
     instruction='''
@@ -60,5 +61,8 @@ root_agent = Agent(
 
     After generating the feature, use the save_feature_file tool.
     ''',
-    tools=[save_feature_file]
+    tools=[save_feature_file],
+    generate_content_config=types.GenerateContentConfig(
+        temperature=0
+    )
 )

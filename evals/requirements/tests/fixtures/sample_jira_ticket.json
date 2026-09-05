@@ -1,0 +1,49 @@
+{
+  "key": "PROJ-1234",
+  "fields": {
+    "summary": "User login with valid credentials",
+    "updated": "2026-09-01T10:15:00.000+0000",
+    "description": {
+      "type": "doc",
+      "version": 1,
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {"type": "text", "text": "A registered user should be able to log in using a valid username and password."}
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {"type": "text", "text": "Acceptance Criteria:"}
+          ]
+        },
+        {
+          "type": "bulletList",
+          "content": [
+            {
+              "type": "listItem",
+              "content": [
+                {"type": "paragraph", "content": [{"type": "text", "text": "User must enter a valid username and password."}]}
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {"type": "paragraph", "content": [{"type": "text", "text": "User is redirected to the dashboard after successful login."}]}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "attachment": [
+      {
+        "filename": "login_mockup.png",
+        "mimeType": "image/png",
+        "content": "https://example.atlassian.net/attachments/12345/login_mockup.png"
+      }
+    ]
+  }
+}
